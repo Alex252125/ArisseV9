@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arisse Manualidades y Decoraciones</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: url('Imagen Fondo Pagina Arisse GPT.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+    header {
+      background: #fff9f9cc;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 1rem;
+    }
+    header h1 {
+      color: #B76E79;
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+    .section {
+      background: #ffffffcc;
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #A0526D;
+    }
+    .accordion {
+      margin-top: 1rem;
+    }
+    .accordion-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+    .accordion-header {
+      padding: 1rem;
+      cursor: pointer;
+      background: #f9e6ef;
+    }
+    .accordion-body {
+      display: none;
+      padding: 1rem;
+      background: #fff5fa;
+    }
+    .form-card {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin: 1rem;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+    }
+    button {
+      background: #B76E79;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    .success {
+      background: #d4edda;
+      color: #155724;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://github.com/Alex252125/ArisseV8/blob/main/Imagen%20de%20portada%20Arisse.png?raw=true" alt="Portada Arisse">
+    <h1>Convierte tu evento en algo inolvidable con detalles únicos y hechos con amor</h1>
+  </header>
+
+  <!-- Información Institucional -->
+  <section class="section">
+    <h2>¿Quiénes somos?</h2>
+    <p>Una tienda online que exhibe y vende productos como velas de miel y soya, jabones naturales, shampoos sólidos, sahumerios, entre otros, con descripciones detalladas y opciones de compra seguras. Gestiona inventario, procesa pagos, realiza envíos y ofrece atención al cliente. Ofrecemos la opción de personalización de sus pedidos.</p>
+
+    <h3>Misión</h3>
+    <p>Transformar momentos especiales en recuerdos inolvidables, con detalles artesanales que despiertan los sentidos, honran la naturaleza y celebran el amor en cada forma.</p>
+
+    <h3>Visión</h3>
+    <p>Promover un mundo donde lo natural, lo artesanal y lo significativo se unan.</p>
+
+    <h3>Valores</h3>
+    <ul>
+      <li>Honestidad</li>
+      <li>Calidad</li>
+      <li>Orientación al cliente</li>
+      <li>Innovación</li>
+      <li>Profesionalidad</li>
+      <li>Puntualidad</li>
+    </ul>
+  </section>
+
+  <!-- Catálogo -->
+  <section class="section">
+    <h2>Catálogo</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header">Baby Shower</div>
+        <div class="accordion-body">
+          <p>Imágenes seleccionables aquí...</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Jabones Naturales</div>
+        <div class="accordion-body">
+          <p>Imágenes seleccionables aquí...</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">Shampoos Sólidos</div>
+        <div class="accordion-body">
+          <p>Imágenes seleccionables aquí...</p>
+        </div>
+      </div>
+    </div>
+    <p><strong>Ofrecemos descuentos por volumen. ¡Contáctanos para más detalles!</strong></p>
+  </section>
+
+  <!-- Formulario de pedidos -->
+  <section class="form-card">
+    <h2>Solicita tu Pedido</h2>
+    <form id="pedido-form">
+      <label>Tipo de evento</label>
+      <input type="text" name="evento" required>
+      
+      <label>Nombre Completo</label>
+      <input type="text" name="nombre" required>
+
+      <label>No. Celular</label>
+      <input type="tel" name="celular" required>
+
+      <label>Correo electrónico</label>
+      <input type="email" name="correo" required>
+
+      <label>Catálogo</label>
+      <select name="catalogo" required>
+        <option value="">Seleccione</option>
+        <option value="Baby Shower">Baby Shower</option>
+        <option value="Jabones Naturales">Jabones Naturales</option>
+        <option value="Shampoos Sólidos">Shampoos Sólidos</option>
+      </select>
+
+      <label>Fecha del evento</label>
+      <input type="date" name="fecha" required>
+
+      <label>Necesidades de Personalización</label>
+      <textarea name="personalizacion"></textarea>
+
+      <p><strong>Ofrecemos descuentos por volumen</strong></p>
+
+      <button type="submit">Enviar Pedido</button>
+      <div id="mensaje-exito" class="success" style="display:none;"></div>
+    </form>
+  </section>
+
+  <script>
+    // Acordeón
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const body = header.nextElementSibling;
+        body.style.display = body.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+
+    // Envío de formulario
+    const form = document.getElementById('pedido-form');
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const res = await fetch('https://script.google.com/macros/s/AKfycbwmEaB-V6p-rNrap0liTqkzl12rBrdfqF9i7HkYhaymOsTlVvGIDZj_f75adMNcmA/exec', {
+        method: 'POST',
+        body: formData
+      });
+
+      if (res.ok) {
+        const msg = document.getElementById('mensaje-exito');
+        msg.textContent = '👍 Gracias, tu pedido ha sido generado.\n⏳ Redirigiendo al inicio...\n🎉 Te contactaremos pronto.';
+        msg.style.display = 'block';
+
+        setTimeout(() => {
+          msg.style.display = 'none';
+          form.reset();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, 5000);
+      }
+    });
+  </script>
+</body>
+</html>
